@@ -56,7 +56,7 @@ bool NAU7802::begin(TwoWire &wirePort, bool initialize)
 
     result &= setGain(NAU7802_GAIN_128); //Set gain to 128
 
-    result &= setSampleRate(NAU7802_SPS_80); //Set samples per second to 10
+    result &= setSampleRate(NAU7802_SPS_80); //Set samples per second to 80
 
     //Turn off CLK_CHP. From 9.1 power on sequencing.
     uint8_t adc = getRegister(NAU7802_ADC);
