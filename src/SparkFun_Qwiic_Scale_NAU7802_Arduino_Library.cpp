@@ -45,7 +45,7 @@ bool NAU7802::begin(i2c_port_num_t port_num)
   i2c_device_config_t deviceConfig = {
       .dev_addr_length = I2C_ADDR_BIT_LEN_7,
       .device_address = _deviceAddress,
-      .scl_speed_hz = 100000,
+      .scl_speed_hz = 400000,
       .scl_wait_us = 0,
       .flags = {
           .disable_ack_check = false,
