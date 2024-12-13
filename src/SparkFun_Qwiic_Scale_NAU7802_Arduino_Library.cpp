@@ -76,7 +76,11 @@ bool NAU7802::begin(i2c_port_num_t port_num)
 
     result &= setGain(NAU7802_GAIN_128); // Set gain to 128
 
+<<<<<<< HEAD
     result &= setSampleRate(NAU7802_SPS_80); // Set samples per second to 10
+=======
+    result &= setSampleRate(NAU7802_SPS_80); //Set samples per second to 80
+>>>>>>> upstream/main
 
     // Turn off CLK_CHP. From 9.1 power on sequencing.
     uint8_t adc = getRegister(NAU7802_ADC);
